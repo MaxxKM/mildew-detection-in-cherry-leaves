@@ -34,7 +34,7 @@ def resize_input_image(img, version):
     return my_image
 
 def load_model_and_predict(my_image, version):
-    model = load_model("outputs/{version}/mildew_detection_model.h5")
+    model = load_model("outputs/v1/mildew_model.h5")
 
     pred_proba = model.predict(my_image)[0, 0]
     target_map = {v: k for k, v in {'Powdery Mildew': 1, 'Healthy': 0}.items()}
