@@ -1,4 +1,4 @@
-numpy==1.23.5
+numpy==1.23.5 --no-binary=numpy
 pandas==1.1.2
 matplotlib==3.3.1
 seaborn==0.11.0
@@ -11,3 +11,7 @@ tensorflow-cpu==2.6.0
 keras==2.6.0
 protobuf==3.20
 altair<5
+
+wheel
+setuptools
+pip
