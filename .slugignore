@@ -8,15 +8,16 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.json
-inputs/datasets/cherry-leaves
-/inputs/datasets/cherry-leaves/test/healthy
-/inputs/datasets/cherry-leaves/train/healthy
-/inputs/datasets/cherry-leaves/validation/healthy
-/inputs/datasets/cherry-leaves/test/powdery_mildew
-/inputs/datasets/cherry-leaves/train/powdery_mildew
-/inputs/datasets/cherry-leaves/validation/powdery_mildew
+/inputs/*
+/jupyter_notebooks/
 /jupyter_notebooks/1Collection.ipynb
 /jupyter_notebooks/2Visualisations.ipynb
 /jupyter_notebooks/3Modelling.ipynb
 /.devcontainer
+/outputs/*
+!/outputs/v1/
+!/outputs/v1/avg_var_healthy.png
+!/outputs/v1/avg_var_powdery_mildew.png
+!/outputs/v1/avg_diff.png
+
 
