@@ -21,4 +21,6 @@ inputs/datasets/cherry-leaves
 /jupyter_notebooks/3Modelling.ipynb
 /cherry-leaves.zip
 /.devcontainer
-/outputs/
+/outputs/*
+!/outputs/v1/
+!/outputs/v1/avg_var_healthy.png
