@@ -1,5 +1,6 @@
 # Mildew Detection in Cherry Leaves
-- Live App Link: [https://powdery-mildew-detection-mkm.herokuapp.com/](https:/powdery-mildew-detection-mkm.herokuapp.com/)
+- Live App Link: [https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com]
+(https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com)
 
 ## Dataset Overview  
 The dataset is sourced from Kaggle. We developed a hypothetical user story where predictive analytics can be applied to a real-world project in the workplace.  
@@ -69,7 +70,11 @@ By reducing manual inspection time, the client will be able to supply the market
 - A technical page showcasing model performance metrics.
 
 ## Unfixed Bugs  
-(No unresolved issues reported at this time.)
+No current bugs as current, however there is a upcoming problem due to Heroku-20 stack becoming deprecated. This will
+slowly cause bugs as time goes on and eventually no longer work.
+
+Also the python version used (only compatible one with this project) is no longer supported meaning it could also
+cause bugs in the future
 
 ## Deployment  
 
