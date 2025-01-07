@@ -9,7 +9,8 @@ class MultiPage:
 
         st.set_page_config(
             page_title=self.app_name,
-            page_icon="/workspace/mildew-detection-in-cherry-leaves/static/images/leaf.png"
+            page_icon="/workspace/mildew-detection-in-cherry-leaves/"
+            "static/images/leaf.png"
         )
 
     def add_page(self, title, func) -> None:
@@ -17,5 +18,6 @@ class MultiPage:
 
     def run(self):
         st.title(self.app_name)
-        page = st.sidebar.radio('Menu', self.pages, format_func=lambda page: page['title'])
+        page = st.sidebar.radio('Menu', self.pages,
+                                format_func=lambda page: page['title'])
         page['function']()

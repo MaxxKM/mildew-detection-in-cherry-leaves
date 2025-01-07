@@ -1,3 +1,6 @@
+# Mildew Detection in Cherry Leaves
+- Live App Link: [https://powdery-mildew-detection-mkm.herokuapp.com/](https:/powdery-mildew-detection-mkm.herokuapp.com/)
+
 ## Dataset Overview  
 The dataset is sourced from Kaggle. We developed a hypothetical user story where predictive analytics can be applied to a real-world project in the workplace.  
 The dataset consists of over 4,000 images captured from the client’s cherry crop fields. The images depict both healthy cherry leaves and those affected by powdery mildew, a fungal disease impacting many plant species. The cherry plantation is one of the company’s premium products, and there is significant concern about maintaining high product quality in the market.
