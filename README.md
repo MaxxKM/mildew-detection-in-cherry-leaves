@@ -1,10 +1,10 @@
 # Mildew Detection in Cherry Leaves
 
-- Live App Link: [https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com](https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com)
+- Live App Link: [Here.](https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com)
 
 ## Dataset Overview  
-The dataset is sourced from Kaggle. We developed a hypothetical user story where predictive analytics can be applied to a real-world project in the workplace.  
-The dataset consists of over 4,000 images captured from the client\u2019s cherry crop fields. The images depict both healthy cherry leaves and those affected by powdery mildew, a fungal disease impacting many plant species. The cherry plantation is one of the company\u2019s premium products, and there is significant concern about maintaining high product quality in the market.
+The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). We developed a hypothetical user story where predictive analytics can be applied to a real-world project in the workplace.  
+The dataset consists of over 4,000 images captured from the clients cherry crop fields. The images depict both healthy cherry leaves and those affected by powdery mildew, a fungal disease impacting many plant species. The cherry plantation is one of the company's premium products, and there is significant concern about maintaining high product quality in the market.
 
 ## Business Case Assessment
 
@@ -71,13 +71,23 @@ The client has agreed upon an accuracy goal of 97%, though the model has been tr
 By reducing manual inspection time, the client will be able to supply the market with higher-quality, mildew-free products. The ability to scale operations across farms will further enhance productivity and efficiency.
 
 ## Dashboard Design  
-- A project summary page outlining the dataset and the client\u2019s requirements.  
-- A page summarizing the findings from the study on visually differentiating between healthy and mildew-affected cherry leaves.  
-- A page with a link to download a set of cherry leaf images for live prediction (Kaggle repository).  
-- An interactive User Interface featuring a file uploader widget, where users can upload multiple images. Each image will display along with a prediction statement indicating whether the cherry leaf is healthy or infected with mildew, along with associated probabilities.  
-- A table summarizing the image names and prediction results, along with a download button to obtain this data.  
-- A page detailing the project hypothesis and how it was validated throughout the project.  
+- A project summary page outlining the dataset and the clients requirements.
+![](static/images/1summary.png)
+- A page summarizing the findings from the study on visually differentiating between healthy and mildew-affected cherry leaves.
+![](static/images/2diff1.png)
+![](static/images/2diff2.png)
+![](static/images/2montage.png)
+![](static/images/2montagehealthy.png)
+![](static/images/2montagemildew.png)
+- A page with a link to download a set of cherry leaf images for live prediction (Kaggle repository). An interactive User Interface featuring a file uploader widget, where users can upload multiple images. Each image will display along with a prediction statement indicating whether the cherry leaf is healthy or infected with mildew, along with associated probabilities. A table summarizing the image names and prediction results, along with a download button to obtain this data.
+![](static/images/3detector.png)
+![](static/images/3healthy.png)
+![](static/images/3mildew.png)
+- A page detailing the project hypothesis and how it was validated throughout the project.
+![](static/images/4hypo.png)
 - A technical page showcasing model performance metrics.
+![](static/images/5train.png)
+![](static/images/5history.png)
 
 ## Unfixed Bugs  
 No current bugs as of now; however, there is an upcoming problem due to the Heroku-20 stack becoming deprecated. This will slowly cause bugs as time goes on and eventually no longer work.
