@@ -72,21 +72,49 @@ By reducing manual inspection time, the client will be able to supply the market
 
 ## Dashboard Design  
 - A project summary page outlining the dataset and the clients requirements.
+
 ![](static/images/1summary.png)
+
 - A page summarizing the findings from the study on visually differentiating between healthy and mildew-affected cherry leaves.
+
+Average and variability images
+
 ![](static/images/2diff1.png)
 ![](static/images/2diff2.png)
+
+Montage of healthy and infected leaves
+
 ![](static/images/2montage.png)
 ![](static/images/2montagehealthy.png)
 ![](static/images/2montagemildew.png)
+
 - A page with a link to download a set of cherry leaf images for live prediction (Kaggle repository). An interactive User Interface featuring a file uploader widget, where users can upload multiple images. Each image will display along with a prediction statement indicating whether the cherry leaf is healthy or infected with mildew, along with associated probabilities. A table summarizing the image names and prediction results, along with a download button to obtain this data.
+
+Dataset and image uploader
+
 ![](static/images/3detector.png)
+
+Healthy report with option for download
+
 ![](static/images/3healthy.png)
+
+Mildew report with option for download
+
 ![](static/images/3mildew.png)
+
 - A page detailing the project hypothesis and how it was validated throughout the project.
+
 ![](static/images/4hypo.png)
+
 - A technical page showcasing model performance metrics.
+
+
+Train, Validation and Test Set
+
 ![](static/images/5train.png)
+
+Model History and Performance
+
 ![](static/images/5history.png)
 
 ## Unfixed Bugs  
