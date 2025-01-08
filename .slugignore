@@ -15,6 +15,7 @@ kaggle.json
 /jupyter_notebooks/2Visualisations.ipynb
 /jupyter_notebooks/3Modelling.ipynb
 /.devcontainer
+/static/image/*
 
 
 

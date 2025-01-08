@@ -32,7 +32,7 @@ The dataset consists of over 4,000 images captured from the clients cherry crop 
 - As a data analyst, I want to visualize and clean the data to ensure high-quality input for the model.
 
 #### User Story: Model Training and Optimization
-- As a machine learning engineer, I want to train a binary classifier to predict leaf health.
+- As a machine learning engineer, I want to train a model to predict leaf health.
 
 #### User Story: Dashboard Development
 - As a user, I want to upload leaf images to the dashboard and receive instant predictions.
