@@ -1,67 +1,77 @@
 # Mildew Detection in Cherry Leaves
-- Live App Link: [https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com]
-(https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com)
+
+- Live App Link: [https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com](https://powdery-mildew-detection-mkm-c29095774113.herokuapp.com)
 
 ## Dataset Overview  
 The dataset is sourced from Kaggle. We developed a hypothetical user story where predictive analytics can be applied to a real-world project in the workplace.  
-The dataset consists of over 4,000 images captured from the client’s cherry crop fields. The images depict both healthy cherry leaves and those affected by powdery mildew, a fungal disease impacting many plant species. The cherry plantation is one of the company’s premium products, and there is significant concern about maintaining high product quality in the market.
+The dataset consists of over 4,000 images captured from the client\u2019s cherry crop fields. The images depict both healthy cherry leaves and those affected by powdery mildew, a fungal disease impacting many plant species. The cherry plantation is one of the company\u2019s premium products, and there is significant concern about maintaining high product quality in the market.
 
-## Business Requirements  
-The cherry plantation at Farmy & Foods is dealing with powdery mildew on its cherry trees. Currently, detecting this disease involves manual verification, where an employee spends around 30 minutes per tree taking sample leaf images and visually inspecting whether the tree is healthy or infected with mildew. If mildew is detected, the employee must then apply a specific fungicide treatment, which takes an additional minute. Given the thousands of cherry trees spread across multiple farms, this manual process is not scalable.  
+## Business Case Assessment
 
-To improve efficiency, the IT team has proposed implementing an ML system that can instantly determine if a cherry tree is healthy or affected by mildew from an image of its leaves. Similar manual processes exist for other crops to detect pests, and if successful, this initiative could be expanded to all crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods from their plantations.
+### Business Requirements
+- **Requirement 1**: Visually distinguish between healthy and mildew-affected cherry leaves.
+- **Requirement 2**: Predict whether a cherry leaf is healthy or contains mildew using an ML model.
 
-### Requirement 1  
-The client is interested in visually distinguishing between healthy cherry leaves and those affected by powdery mildew.  
+### Can Conventional Data Analysis Address These Requirements?
+- Requirement 1: Yes, conventional data analysis can help in visually distinguishing the leaves.
+- Requirement 2: No, ML is necessary for prediction tasks.
 
-### Requirement 2  
-The client is interested in predicting whether a cherry leaf is healthy or contains mildew.
+### Does the Client Need a Dashboard or an API Endpoint?
+- The client requires a dashboard.
 
-## Hypothesis and Validation  
-Powdery mildew-infected leaves exhibit a distinctive powdery white layer on the surface, which can be visually detected.  
-The hypothesis is validated by collecting an image dataset from the client and creating an image montage comparing healthy and infected leaves.  
-The hypothesis is further tested through average image analysis.
+### Success Criteria
+- A tool to differentiate healthy and mildew-affected leaves.
+- A prediction system with at least 97% accuracy integrated into the dashboard.
 
-## Mapping Business Requirements to Data Visualizations and ML Tasks  
+### User Stories
 
-### Business Requirement 1  
-The study should include an analysis of:  
-- Average images and variability images for each class (healthy or powdery mildew).  
-- Differences between the average healthy and average mildew-affected cherry leaves.  
-- An image montage showcasing each class.  
+#### User Story: Information Gathering and Data Collection
+- As a data scientist, I want to collect and prepare the dataset to train an accurate model.
 
-### Business Requirement 2  
-The ML system should predict whether a cherry leaf is healthy or contains mildew.  
-The dashboard should feature an image montage and a prediction feature.
+#### User Story: Data Visualization and Cleaning
+- As a data analyst, I want to visualize and clean the data to ensure high-quality input for the model.
 
-## ML Business Case  
+#### User Story: Model Training and Optimization
+- As a machine learning engineer, I want to train a binary classifier to predict leaf health.
+
+#### User Story: Dashboard Development
+- As a user, I want to upload leaf images to the dashboard and receive instant predictions.
+
+#### User Story: Deployment and Release
+- As a project manager, I want to deploy the dashboard so the client can access it.
+
+## Privacy and Ethical Considerations
+- Data under NDA should only be shared with authorized personnel.
+- Ensure data handling adheres to privacy agreements.
+
+## ML Business Case
 
 ### What are the business requirements?  
 The client seeks a tool to accurately differentiate between healthy cherry leaves and those affected by mildew. Given that ML can effectively classify images, this need aligns well with ML capabilities.
 
-### Can conventional data analysis address any of the business requirements?  
+### Can Conventional Data Analysis Address Any of the Business Requirements?  
 Requirement 1 can be addressed through traditional data analysis methods. However, Requirement 2 cannot be solved using conventional approaches, making ML necessary to tackle this challenge.
 
-### Does the client need a dashboard or an API endpoint?  
+### Does the Client Need a Dashboard or an API Endpoint?  
 The client requires a dashboard.
 
-### What constitutes a successful project outcome for the client?  
+### What Constitutes a Successful Project Outcome for the Client?  
 The client should be able to visually differentiate between healthy and mildew-affected leaves and predict if a leaf is healthy or infected by mildew via an interactive dashboard.
 
-### What are the model's inputs and intended outputs?  
+### What Are the Model's Inputs and Intended Outputs?  
 The input is a cherry leaf image, and the output is a prediction indicating whether the leaf is healthy or contains mildew.
 
-### Does the data suggest a particular model?  
+### Does the Data Suggest a Particular Model?  
 The data points towards a binary classification model.
 
-### What are the criteria for the performance goal of predictions?  
+### What Are the Criteria for the Performance Goal of Predictions?  
 The client has agreed upon an accuracy goal of 97%, though the model has been trained to achieve 99%.
 
-### How will the client benefit?  
+### How Will the Client Benefit?  
 By reducing manual inspection time, the client will be able to supply the market with higher-quality, mildew-free products. The ability to scale operations across farms will further enhance productivity and efficiency.
 
 ## Dashboard Design  
-- A project summary page outlining the dataset and the client’s requirements.  
+- A project summary page outlining the dataset and the client\u2019s requirements.  
 - A page summarizing the findings from the study on visually differentiating between healthy and mildew-affected cherry leaves.  
 - A page with a link to download a set of cherry leaf images for live prediction (Kaggle repository).  
 - An interactive User Interface featuring a file uploader widget, where users can upload multiple images. Each image will display along with a prediction statement indicating whether the cherry leaf is healthy or infected with mildew, along with associated probabilities.  
@@ -70,11 +80,9 @@ By reducing manual inspection time, the client will be able to supply the market
 - A technical page showcasing model performance metrics.
 
 ## Unfixed Bugs  
-No current bugs as current, however there is a upcoming problem due to Heroku-20 stack becoming deprecated. This will
-slowly cause bugs as time goes on and eventually no longer work.
+No current bugs as of now; however, there is an upcoming problem due to the Heroku-20 stack becoming deprecated. This will slowly cause bugs as time goes on and eventually no longer work.
 
-Also the python version used (only compatible one with this project) is no longer supported meaning it could also
-cause bugs in the future
+Also, the Python version used (only compatible one with this project) is no longer supported, meaning it could also cause bugs in the future.
 
 ## Deployment  
 
@@ -100,5 +108,4 @@ cause bugs in the future
 
 ## Credits  
 - The code for data modeling, visualization, and ML model creation, training, and deployment was adapted from Code Institute lessons and walkthrough projects.  
-- The dashboard and `README.md` file were constructed using provided templates.  
-
+- The dashboard and `README.md` file were constructed using provided templates.
